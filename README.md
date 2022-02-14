@@ -97,6 +97,8 @@ They are defined based on which methods they possess. The classes are **not mutu
 
 ### Estimator
 
+![estimator table, where StandardScaler, PCA, KMeans, and LinearRegression are all checked off](images/estimator.png)
+
 Almost all scikit-learn classes you will use will be some kind of estimator. It is the "base object" in scikit-learn.
 
 An estimator is defined by having a `fit` method. There are two typical forms for this method:
@@ -114,6 +116,8 @@ estimator.fit(X, y)
 The first one is typically used in the context of a transformer or unsupervised learning predictor, while the second is used in the context of a supervised learning predictor.
 
 ### Transformer
+
+![transformer table, where StandardScaler, PCA and KMeans are checked off](images/transformer.png)
 
 A transformer is an estimator that has a `transform` method:
 
@@ -236,6 +240,8 @@ Some additional examples of transformers (that aren't also predictors) are:
 
 ### Predictor
 
+![predictor table, where KMeans and LinearRegression are checked off](images/predictor.png)
+
 As you might have...*predicted*...a predictor is an estimator that has a `predict` method:
 
 ```python
@@ -350,6 +356,8 @@ Some additional examples of predictors (that aren't also transformers) are:
 * [`DecisionTreeClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html): a classifier that uses the decision tree algorithm
 
 ### Models
+
+![model table, where PCA, KMeans, and LinearRegression are checked off](images/model.png)
 
 A model is an estimator that has a `score` method. There are two typical forms for this method:
 
