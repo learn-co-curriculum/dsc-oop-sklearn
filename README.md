@@ -355,7 +355,7 @@ Some additional examples of predictors (that aren't also transformers) are:
 * [`KNeighborsRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html): a regressor that uses the k-nearest neighbors algorithm
 * [`DecisionTreeClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html): a classifier that uses the decision tree algorithm
 
-### Models
+### Model
 
 ![model table, where PCA, KMeans, and LinearRegression are checked off](images/model.png)
 
@@ -483,9 +483,11 @@ As stated previously, these scikit-learn classes are not mutually exclusive.
 
 `LinearRegression` is an **estimator**, a **predictor**, and a **model** but not a transformer.
 
+`KMeans` is an **estimator**, a **transformer**, a **predictor**, and a **model**.
+
 `PCA` is an **estimator**, a **transformer**, and a **model** but not a predictor.
 
-There do exist classes that are all four categories at once, such as `KMeans`, an unsupervised clustering model that can make predictions as well as transform X data to a cluster-distance space ([documentation here](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)).
+(Don't worry if you're not sure what all of these classes are used for. We'll get there eventually!)
 
 ## Takeaways
 
